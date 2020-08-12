@@ -2902,8 +2902,8 @@ export interface LikeNullablePromise
 
 export interface Room {
   id: ID_Output;
-  createdAt: DateTimeOutput;
-  updatedAt: DateTimeOutput;
+  createdAt?: DateTimeOutput;
+  updatedAt?: DateTimeOutput;
 }
 
 export interface RoomPromise extends Promise<Room>, Fragmentable {
@@ -2985,8 +2985,8 @@ export interface RoomNullablePromise
 export interface Message {
   id: ID_Output;
   text: String;
-  createdAt: DateTimeOutput;
-  updatedAt: DateTimeOutput;
+  createdAt?: DateTimeOutput;
+  updatedAt?: DateTimeOutput;
 }
 
 export interface MessagePromise extends Promise<Message>, Fragmentable {
@@ -3615,8 +3615,8 @@ export interface MessageSubscriptionPayloadSubscription
 export interface MessagePreviousValues {
   id: ID_Output;
   text: String;
-  createdAt: DateTimeOutput;
-  updatedAt: DateTimeOutput;
+  createdAt?: DateTimeOutput;
+  updatedAt?: DateTimeOutput;
 }
 
 export interface MessagePreviousValuesPromise
@@ -3717,8 +3717,8 @@ export interface RoomSubscriptionPayloadSubscription
 
 export interface RoomPreviousValues {
   id: ID_Output;
-  createdAt: DateTimeOutput;
-  updatedAt: DateTimeOutput;
+  createdAt?: DateTimeOutput;
+  updatedAt?: DateTimeOutput;
 }
 
 export interface RoomPreviousValuesPromise

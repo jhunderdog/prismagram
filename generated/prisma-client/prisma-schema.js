@@ -745,8 +745,8 @@ type Message {
   from: User!
   to: User!
   room: Room!
-  createdAt: DateTime!
-  updatedAt: DateTime!
+  createdAt: DateTime
+  updatedAt: DateTime
 }
 
 type MessageConnection {
@@ -794,8 +794,8 @@ enum MessageOrderByInput {
 type MessagePreviousValues {
   id: ID!
   text: String!
-  createdAt: DateTime!
-  updatedAt: DateTime!
+  createdAt: DateTime
+  updatedAt: DateTime
 }
 
 input MessageScalarWhereInput {
@@ -1452,8 +1452,8 @@ type Room {
   id: ID!
   participants(where: UserWhereInput, orderBy: UserOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [User!]
   messages(where: MessageWhereInput, orderBy: MessageOrderByInput, skip: Int, after: String, before: String, first: Int, last: Int): [Message!]
-  createdAt: DateTime!
-  updatedAt: DateTime!
+  createdAt: DateTime
+  updatedAt: DateTime
 }
 
 type RoomConnection {
@@ -1504,8 +1504,8 @@ enum RoomOrderByInput {
 
 type RoomPreviousValues {
   id: ID!
-  createdAt: DateTime!
-  updatedAt: DateTime!
+  createdAt: DateTime
+  updatedAt: DateTime
 }
 
 input RoomScalarWhereInput {
